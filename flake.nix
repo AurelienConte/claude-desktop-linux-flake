@@ -31,6 +31,9 @@
             uv
           ];
           runScript = "${claude-desktop}/bin/claude-desktop";
+          profile = ''
+              export LIBGL_ALWAYS_SOFTWARE=1
+            '';
         };
         default = claude-desktop;
       };
